@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,400&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+ul {
+	list-style: none;
+}
+
+.pagination {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 50px;
+	gap: 20px;
+}
+
+.pagination .page-number {
+	font-size: 16px;
+	font-weight: 600;
+	color: #000;
+	background: #fff;
+	padding: 10px 20px;
+	border-radius: 10px;
+	cursor: pointer;
+	transition: all 0.3s ease;
+}
+
+.pagination .page-number:hover {
+	color: #fff;
+	background: #828282;
+}
+
+.pagination .active {
+	color: #fff;
+	background: #00a8ff;
+}
+
+.pagination .active:hover {
+	color: #fff;
+	background: #828282;
+}
